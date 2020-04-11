@@ -1,6 +1,6 @@
 #!bin/sh
 
-# 参数1：java项目git地址 参数2：镜像名称 参数3：网络名称 参数4：IP地址
+# 参数1：java项目git地址 参数2：git分支 参数3：镜像名称 参数4：网络名称 参数5：IP地址
 
 #进入工作文件夹
 cd ~/workspace
@@ -20,7 +20,7 @@ rm -rf  $project_name
 fi
 
 #打包构建项目
-git clone $git_address
+git clone -b $2 $git_address
 cd $project_name
 mvn clean package
 cp target/$project_name*.jar ../
@@ -37,13 +37,13 @@ echo "RUN nohup java -jar $jar_name >nohup.out &">>Dockerfile
 echo "ENTRYPOINT [\"nohup\",\"java\",\"-jar\",\"$jar_name\",\">nohup.out\",\"&\"]">>Dockerfile
 
 # 构建镜像
-docker build -t $2 .
+docker build -t $3 .
 
 # 指定网络和ip启动镜像，判断如果没输入参数或者输入部分参数如何启动
 if [ -z "$4" ]
 then
-   docker run -p 8081:8080 -dit $2
+   docker run -p 8081:8080 -dit $3
    exit
 else
-   docker run -dit -p 8081:8080 --net $3 --ip $4 $2
+   docker run -dit -p 8081:8080 --net $4 --ip $5 $3
 fi
