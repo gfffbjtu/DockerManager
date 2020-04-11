@@ -18,4 +18,4 @@ def test_git_pull():
 
 
 if __name__ == '__main__':
-    test()
+    test_git_pull()

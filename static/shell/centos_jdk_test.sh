@@ -3,7 +3,7 @@
 # 参数1：java项目git地址 参数2：镜像名称 参数3：网络名称 参数4：IP地址
 
 #进入工作文件夹
-cd ~/workplace
+cd ~/workspace
 
 #解析获取项目名称
 git_address=$1
