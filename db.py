@@ -8,7 +8,7 @@ from app import app
 
 # url的格式为：数据库的协议：//用户名：密码@ip地址：端口号（默认可以不写）/数据库名
 # app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:root@127.0.0.1/dockermanager"
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:123456@127.0.0.1/dockermanager"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:123456@127.0.0.1/dockermanager"
 # 动态追踪数据库的修改. 性能不好. 且未来版本中会移除. 目前只是为了解决控制台的提示才写的
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_ECHO"] = True
@@ -42,8 +42,6 @@ class ModelProject(db.Model, _BaseModel):
     project_name = Column(String(32))
     project_description = Column(String(64))
     project_creator_id = Column(String(32))
-    create_time = Column(BIGINT)
-    update_time = Column(TIMESTAMP)
 
 
 def insert_project():
