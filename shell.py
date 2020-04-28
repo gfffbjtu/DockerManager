@@ -21,6 +21,7 @@ def test_git_pull():
 
 
 def build_java_project_image(image_dict):
+    """调用脚本 从git拉取java项目"""
     sh_file_path = ROOT_DIR + 'build_java_image.sh'
     git_address = image_dict['git_address']
     git_branch = image_dict['git_branch']
@@ -28,12 +29,19 @@ def build_java_project_image(image_dict):
     tmp_file = gen_unique_id()
     param_arr = ['sh', sh_file_path, git_address, git_branch, image_name, '>', tmp_file]
     os.system(' '.join(param_arr))
-    param_arr = ['cat', tmp_file, '|', 'awk', '\'END {print}\'']
-    tail_line = os.system(' '.join(param_arr))
-    return ' '.split(tail_line)[-1]
+    file = open(tmp_file)
+    lines = file.readlines()
+    tail_line = lines[-1]
+    os.system('rm -rf ' + tmp_file)
+    return tail_line.split(' ')[-1]
 
 
 if __name__ == '__main__':
-    test_git_pull()
+    image_dict = {
+        'git_address': 'https://github.com/gfffbjtu/SpringBootTest.git',
+        'git_branch': 'master',
+        'image_name': 'dockerjava:v5'
+    }
+    build_java_project_image(image_dict)
 
 
