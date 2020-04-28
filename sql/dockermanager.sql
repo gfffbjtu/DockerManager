@@ -25,3 +25,15 @@ CREATE TABLE dm_docker_container(
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日期',
   UNIQUE KEY `uniq_docker_id` (docker_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT 'docker容器信息表';
+
+CREATE TABLE dm_image(
+  `id` int(11) AUTO_INCREMENT PRIMARY KEY COMMENT '自增id',
+  `image_id` varchar(32) NOT NULL DEFAULT '' COMMENT '镜像id',
+  `image_name` varchar(32) NOT NULL DEFAULT '' COMMENT '镜像名称',
+  `git_address` varchar(64) NOT NULL DEFAULT '' COMMENT '拉取对应项目的git地址',
+  `git_branch` varchar(32) NOT NULL DEFAULT '' COMMENT '对应项目的git分支',
+  `creator_id` varchar(32) NOT NULL DEFAULT '' COMMENT '项目创建者用户id',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP  COMMENT '创建日期',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日期',
+  UNIQUE KEY `uniq_image_id` (image_id)
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT '镜像信息表';

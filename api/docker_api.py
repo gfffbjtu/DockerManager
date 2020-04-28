@@ -17,7 +17,7 @@ def create_docker():
     if 'image_name' in create_docker_req:
         image_name = create_docker_req['image_name']
     else:
-        return jsonify({'err_no':202004280848, 'err_msg': 'param error-image_name cannot be null'})
+        return jsonify({'err_no': 202004280848, 'err_msg': 'param error-image_name cannot be null'})
 
     docker_dict = {
         'project_id': project_id,
