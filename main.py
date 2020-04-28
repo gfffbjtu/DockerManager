@@ -3,7 +3,8 @@ from flask import Flask
 import logging
 from flask_log_request_id import RequestID, RequestIDLogFilter
 from logging.handlers import TimedRotatingFileHandler
-from project_api import project_blue
+from api.project_api import project_blue
+from api.docker_api import docker_blue
 from db.base_model import db
 
 app = Flask(__name__)
@@ -27,6 +28,7 @@ db.init_app(app)
 
 
 app.register_blueprint(project_blue)
+app.register_blueprint(docker_blue)
 
 if __name__ == '__main__':
     app.run()

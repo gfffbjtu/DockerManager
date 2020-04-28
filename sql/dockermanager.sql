@@ -20,7 +20,7 @@ CREATE TABLE dm_docker_container(
   `image_name` varchar(32) NOT NULL DEFAULT '' COMMENT '镜像名称',
   `net_name` varchar(32) NOT NULL DEFAULT '' COMMENT '对应网络名称',
   `net_ip` varchar(16) NOT NULL DEFAULT '' COMMENT '对应容器启动的ip地址(内网)',
-  `project_creator_id` varchar(32) NOT NULL DEFAULT '' COMMENT '项目创建者用户id',
+  `creator_id` varchar(32) NOT NULL DEFAULT '' COMMENT '项目创建者用户id',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP  COMMENT '创建日期',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日期',
   UNIQUE KEY `uniq_docker_id` (docker_id)

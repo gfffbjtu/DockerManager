@@ -1,4 +1,4 @@
-"""数据库操作类"""
+"""project数据库操作类"""
 from sqlalchemy import Column, String
 from sqlalchemy.dialects.mysql import INTEGER
 from sqlalchemy.exc import IntegrityError
@@ -34,5 +34,3 @@ def insert_project(project_dict):
     return 0, 'success'
 
 
-if __name__ == '__main__':
-    insert_project()
