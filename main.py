@@ -33,4 +33,4 @@ app.register_blueprint(docker_blue)
 app.register_blueprint(image_blue)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8088)
