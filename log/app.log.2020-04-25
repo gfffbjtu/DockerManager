@@ -1,0 +1,963 @@
+[2020-04-25 10:04:28,228][bd63b7dc-93a6-48f3-a4d0-f06da4c157c3] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:04:28,230][bd63b7dc-93a6-48f3-a4d0-f06da4c157c3] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 19, in create_project
+    project_dict = {"project_name": create_project_req_json['project_name']}
+TypeError: string indices must be integers
+[2020-04-25 10:08:09,568][ae50a26d-3950-485e-8be5-6ea8b4046f65] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:08:09,572][ae50a26d-3950-485e-8be5-6ea8b4046f65] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 19, in create_project
+    project_dict = {"project_name": create_project_req_json.get('project_name')}
+AttributeError: 'str' object has no attribute 'get'
+[2020-04-25 10:09:54,221][6962fd8b-6dcc-4635-addc-b2e6b0160bc1] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:10:48,328][b4d075a7-ff5e-41f8-bf61-14f9e667a768] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:23:58,894][e248a728-6580-4cb3-ab96-949015944d18] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:35:46,967][c9f3c437-da7b-48de-9f31-2f21e48b1291] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:35:46,970][c9f3c437-da7b-48de-9f31-2f21e48b1291] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry[key]
+KeyError: <greenlet.greenlet object at 0x118e33470>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 39, in insert_project
+    db.session.begin(subtransactions=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/_collections.py", line 1012, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 3206, in __call__
+    return self.class_(**local_kw)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 143, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 877, in engine
+    return self.get_engine()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 896, in get_engine
+    return connector.get_engine()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 559, in get_engine
+    self._engine = rv = sqlalchemy.create_engine(info, **options)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/__init__.py", line 423, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 62, in dbapi
+    return __import__("pymysql")
+ModuleNotFoundError: No module named 'pymysql'
+[2020-04-25 10:38:37,296][b8944d29-585c-4c9a-9e56-b786ed27ec8b] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:38:37,427][b8944d29-585c-4c9a-9e56-b786ed27ec8b] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 354, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 751, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 483, in checkout
+    rec = pool._do_get()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 138, in _do_get
+    self._dec_overflow()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 135, in _do_get
+    return self._create_connection()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 299, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 428, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 630, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 599, in connect
+    self._request_authentication()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 861, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 47, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 213, in save_obj
+    ) in _organize_states_for_save(base_mapper, states, uowtransaction):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 374, in _organize_states_for_save
+    base_mapper, uowtransaction, states
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1585, in _connections_for_states
+    connection = uowtransaction.transaction.connection(base_mapper)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 312, in connection
+    return self._connection_for_bind(bind, execution_options)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 418, in _connection_for_bind
+    conn = self._parent._connection_for_bind(bind, execution_options)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 418, in _connection_for_bind
+    conn = self._parent._connection_for_bind(bind, execution_options)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 430, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 354, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 751, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 483, in checkout
+    rec = pool._do_get()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 138, in _do_get
+    self._dec_overflow()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/impl.py", line 135, in _do_get
+    return self._create_connection()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 299, in _create_connection
+    return _ConnectionRecord(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 428, in __init__
+    self.__connect(first_connect_check=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/pool/base.py", line 630, in __connect
+    connection = pool._invoke_creator(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 599, in connect
+    self._request_authentication()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 861, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/gaofeng/.local/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2020-04-25 10:39:18,085][a804da39-f411-449e-b736-969c6b160244] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:39:18,202][a804da39-f411-449e-b736-969c6b160244] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.DataError: (1406, "Data too long for column 'project_id' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 47, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.DataError: (_mysql_exceptions.DataError) (1406, "Data too long for column 'project_id' at row 1")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: (<function gen_unique_id at 0x11f832a60>, '测试项目', '', '')]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+[2020-04-25 10:39:47,016][cf4dc886-1e5e-498e-b275-fa468b89416b] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:39:47,047][cf4dc886-1e5e-498e-b275-fa468b89416b] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1048, "Column 'project_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 47, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1048, "Column 'project_id' cannot be null")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: (None, '测试项目', '', '')]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2020-04-25 10:40:54,711][0ae6a834-0425-4874-9dff-e31c8b76af5d] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:40:54,742][0ae6a834-0425-4874-9dff-e31c8b76af5d] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1048, "Column 'project_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 47, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1048, "Column 'project_id' cannot be null")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: (None, '测试项目', '', '')]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2020-04-25 10:42:51,447][d51c07ad-50f5-4498-992b-280d0f84b125] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:42:51,495][d51c07ad-50f5-4498-992b-280d0f84b125] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1048, "Column 'project_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 49, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1048, "Column 'project_id' cannot be null")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: (None, '测试项目', '', '')]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2020-04-25 10:43:42,377][5a94a9ee-a601-4fed-8632-7d13475585d8] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:43:42,422][5a94a9ee-a601-4fed-8632-7d13475585d8] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1048, "Column 'project_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 49, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1048, "Column 'project_id' cannot be null")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: (None, '测试项目', '', '')]
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2020-04-25 10:48:19,295][c45ca253-eb1e-444e-9762-bf19097ebdcd] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-25 10:48:19,412][c45ca253-eb1e-444e-9762-bf19097ebdcd] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.IntegrityError: (1062, "Duplicate entry '测试项目' for key 'uniq_project_name'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db.py", line 47, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (_mysql_exceptions.IntegrityError) (1062, "Duplicate entry '测试项目' for key 'uniq_project_name'")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: ('a5371ce56f924538f10314bd8b963d1e', '测试项目', '', '')]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-25 10:48:53,971][cb18de6c-25f6-425c-849b-15d0f65908ee] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目1", "project_description": "这是一个测试项目"}
+[2020-04-25 10:52:33,277][fe0997cc-613f-4e6c-a421-d43fe58065f7] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目1", "project_description": "这是一个测试项目"}
+[2020-04-25 11:05:10,346][d3ecce9c-defe-4e1c-a9c6-3054aca99891] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目4", "project_description": "这是一个测试项目"}
+[2020-04-25 11:13:47,998][6315567a-7058-41ff-9107-0ad55cfed04d] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目4", "project_description": "这是一个测试项目"}
+[2020-04-25 11:13:48,058][6315567a-7058-41ff-9107-0ad55cfed04d] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.IntegrityError: (1062, "Duplicate entry '测试项目4' for key 'uniq_project_name'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/project_api.py", line 20, in create_project
+    insert_project(project_dict)
+  File "/Users/gaofeng/docker/DockerManager/db/project_model.py", line 29, in insert_project
+    db.session.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 411, in _query
+    rowcount = self._do_query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/cursors.py", line 374, in _do_query
+    db.query(q)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/MySQLdb/connections.py", line 292, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (_mysql_exceptions.IntegrityError) (1062, "Duplicate entry '测试项目4' for key 'uniq_project_name'")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: ('da98bb24c620a29fdb223e82fcf1c7f3', '测试项目4', '', '')]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-25 11:13:51,443][389c4522-07e2-49c0-9012-d7786408345b] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:18:06,322][d43d5fe4-3697-4e81-90be-c28f2db4904e] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:18:10,618][206e56af-83b5-442c-ab78-25d8af2b5fd9] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:18:49,989][c1a82ec2-412a-4236-9ae2-2fd891509fcc] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:19:19,292][025287fe-45b0-4c20-a2f9-b306ad515f69] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:21:05,358][7111a86f-eeb9-42ea-939d-601b7c0e317b] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:21:45,055][d70caeac-6dcd-40a0-b130-6d1d0cda1059] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:22:32,171][a878f16a-74f6-48fc-8e63-ea342e2a055b] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:23:57,308][49534301-f747-47ab-8dd4-cc4dcebbf4d2] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:23:57,337][49534301-f747-47ab-8dd4-cc4dcebbf4d2] [/Users/gaofeng/docker/DockerManager/db/project_model.py:33] INFO - (_mysql_exceptions.IntegrityError) (1062, "Duplicate entry '测试项目5' for key 'uniq_project_name'")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: ('b5ecdbd09c8106515f238742e21dab06', '测试项目5', '', '')]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-25 11:25:13,260][bfd60522-5b4a-475f-8a09-f5c120bfa248] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:25:15,240][bfd60522-5b4a-475f-8a09-f5c120bfa248] [/Users/gaofeng/docker/DockerManager/db/project_model.py:33] INFO - exception=%s
+[2020-04-25 11:25:15,241][bfd60522-5b4a-475f-8a09-f5c120bfa248] [/Users/gaofeng/docker/DockerManager/db/project_model.py:34] INFO - exception
+[2020-04-25 11:25:49,665][e90c73fa-a616-45e0-9fcf-3e81b3f08a29] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_name": "测试项目5", "project_description": "这是一个测试项目"}
+[2020-04-25 11:25:49,767][e90c73fa-a616-45e0-9fcf-3e81b3f08a29] [/Users/gaofeng/docker/DockerManager/db/project_model.py:33] INFO - exception= (_mysql_exceptions.IntegrityError) (1062, "Duplicate entry '测试项目5' for key 'uniq_project_name'")
+[SQL: INSERT INTO dm_project (project_id, project_name, project_description, project_creator_id) VALUES (%s, %s, %s, %s)]
+[parameters: ('ea7c4cc1bf94915a5211f7af42843c06', '测试项目5', '', '')]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2020-04-25 11:25:49,768][e90c73fa-a616-45e0-9fcf-3e81b3f08a29] [/Users/gaofeng/docker/DockerManager/db/project_model.py:34] INFO - exception

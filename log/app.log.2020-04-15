@@ -1,0 +1,66 @@
+[2020-04-15 16:13:49,596][e436dcc1-3e8c-4061-88ac-e92ced6be01c] [/Users/gaofeng/docker/DockerManager/app.py:21] INFO - hello
+[2020-04-15 16:20:08,045][536e7103-d92b-4f3c-99a6-6d5264457d47] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/app.py", line 28, in create_project
+    create_project_req_json = get_request_json()
+  File "/Users/gaofeng/docker/DockerManager/common_tool.py", line 31, in get_request_json
+    app.logger.info("request_body=%s", request_body)
+NameError: name 'app' is not defined
+[2020-04-15 16:21:31,103][f776fdc2-d5b7-495e-b91b-d587bd270ea7] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/gaofeng/docker/DockerManager/app.py", line 28, in create_project
+    create_project_req_json = get_request_json()
+  File "/Users/gaofeng/docker/DockerManager/common_tool.py", line 32, in get_request_json
+    app.logger.info("request_body=%s", request_body)
+AttributeError: module 'app' has no attribute 'logger'
+[2020-04-15 16:33:26,903][23120ca6-1374-408e-bcb3-1fb4b0546708] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+[2020-04-15 16:37:21,571][eb8ba393-cee0-4dd3-b714-3e379ceeb34a] [/Users/gaofeng/docker/DockerManager/project_api.py:19] INFO - None
+[2020-04-15 16:37:21,572][eb8ba393-cee0-4dd3-b714-3e379ceeb34a] [/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py:1761] ERROR - Exception on /project/add [POST]
+Traceback (most recent call last):
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/gaofeng/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+[2020-04-15 16:38:06,227][e78f5adf-db59-411a-8b7b-4c558357a026] [/Users/gaofeng/docker/DockerManager/project_api.py:19] INFO - None
+[2020-04-15 16:38:50,269][bff071da-61cc-4744-a188-07511e097bf0] [/Users/gaofeng/docker/DockerManager/project_api.py:19] INFO - {"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-15 16:39:18,631][d161ec8d-613c-4dce-bca6-ca622871b876] [/Users/gaofeng/docker/DockerManager/common_tool.py:33] INFO - request_body={"project_name": "测试项目", "project_description": "这是一个测试项目"}
+[2020-04-15 16:39:18,632][d161ec8d-613c-4dce-bca6-ca622871b876] [/Users/gaofeng/docker/DockerManager/project_api.py:19] INFO - {"project_name": "测试项目", "project_description": "这是一个测试项目"}

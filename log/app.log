@@ -1,0 +1,1 @@
+[2020-04-28 10:04:26,145][8173b0bf-accf-4712-a863-6ae3e3aca142] [/Users/gaofeng/docker/DockerManager/common_tool.py:31] INFO - request_body={"project_id": "1", "image_name": "dockertest:v1"}
