@@ -22,7 +22,7 @@ def insert_image(image_dict):
     image_obj.image_name = image_dict.get('image_name')
     image_obj.git_address = image_dict.get('git_address')
     image_obj.git_branch = image_dict.get('git_branch')
-    image_obj.creator_id = image_dict.get('creator_id')
+    image_obj.creator_id = image_dict.get('creator_id', '')
 
     db.session.add(image_obj)
     db.session.commit()

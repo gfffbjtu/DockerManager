@@ -33,15 +33,16 @@ def build_java_project_image(image_dict):
     lines = file.readlines()
     tail_line = lines[-1]
     os.system('rm -rf ' + tmp_file)
-    return tail_line.split(' ')[-1]
+    image_id = tail_line.split(' ')[-1]
+    if image_id.endswith('\n'):
+        return image_id[0: -2]
+    return image_id
 
 
 if __name__ == '__main__':
-    image_dict = {
-        'git_address': 'https://github.com/gfffbjtu/SpringBootTest.git',
-        'git_branch': 'master',
-        'image_name': 'dockerjava:v5'
-    }
-    build_java_project_image(image_dict)
+    image_id = '9ff41025cdf3\n'
+    if image_id.endswith('\n'):
+        image_id = image_id[0: -2]
+    print(image_id)
 
 
