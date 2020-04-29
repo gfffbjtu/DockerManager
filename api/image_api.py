@@ -1,7 +1,8 @@
 # 镜像相关api
 from flask import Blueprint, jsonify, current_app
 from common_tool import get_request_json_obj
-from db.docker_model import insert_docker_container
+from shell import build_java_project_image
+from db.image_model import insert_image
 
 image_blue: Blueprint = Blueprint('image_api', __name__)
 
@@ -26,8 +27,10 @@ def create_image():
         'image_name': image_name
     }
 
+    # 创建镜像并获取镜像id
+    image_id = build_java_project_image(image_dict)
 
+    image_dict['image_id'] = image_id
+    err_no, err_msg = insert_image(image_dict)
 
-    return jsonify({'err_no': 0})
-
-
+    return jsonify({'err_no': err_no, 'err_msg': err_msg})

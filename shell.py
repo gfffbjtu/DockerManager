@@ -21,7 +21,7 @@ def test_git_pull():
 
 
 def build_java_project_image(image_dict):
-    """调用脚本 从git拉取java项目"""
+    """调用脚本 从git拉取java项目,返回生成的镜像id"""
     sh_file_path = ROOT_DIR + 'build_java_image.sh'
     git_address = image_dict['git_address']
     git_branch = image_dict['git_branch']
