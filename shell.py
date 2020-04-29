@@ -35,14 +35,14 @@ def build_java_project_image(image_dict):
     os.system('rm -rf ' + tmp_file)
     image_id = tail_line.split(' ')[-1]
     if image_id.endswith('\n'):
-        return image_id[0: -2]
+        return image_id[0: -1]
     return image_id
 
 
 if __name__ == '__main__':
     image_id = '9ff41025cdf3\n'
     if image_id.endswith('\n'):
-        image_id = image_id[0: -2]
+        image_id = image_id[0: -1]
     print(image_id)
 
 
