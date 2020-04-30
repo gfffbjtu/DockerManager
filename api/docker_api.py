@@ -36,7 +36,7 @@ def create_docker():
 
 
 @docker_blue.route('/docker/run', methods=['POST'])
-def run_docker():
+def run_docker_container():
     """启动docker容器"""
     run_docker_req = get_request_json_obj()
     if 'docker_id' in run_docker_req:
