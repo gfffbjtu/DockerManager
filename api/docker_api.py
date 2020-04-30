@@ -1,6 +1,8 @@
 from flask import Blueprint, jsonify, current_app
 from common_tool import get_request_json_obj
-from db.docker_model import insert_docker_container, select_docker_by_docker_id
+from db.docker_model import insert_docker_container, select_docker_by_docker_id, \
+    update_container_id_by_docker_id
+from shell import run_docker
 
 docker_blue: Blueprint = Blueprint('docker_api', __name__)
 
@@ -49,5 +51,13 @@ def run_docker():
         return jsonify({'err_no': 202004301550, 'err_msg': 'please configure image firstly'})
 
     # 执行脚本启动容器
+    docker_dict = {
+        'image_name': docker_obj.image_name,
+        'net_name': docker_obj.net_name,
+        'net_ip': docker_obj.net_ip
+    }
+    container_id = run_docker(docker_dict)
 
-    return jsonify({'err-no': 0})
+    # 启动脚本后将容器id回写到数据库中
+    err_no, err_msg = update_container_id_by_docker_id(docker_id, container_id)
+    return jsonify({'err_no': err_no, 'err_msg': err_msg})

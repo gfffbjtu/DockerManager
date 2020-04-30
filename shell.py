@@ -42,14 +42,24 @@ def build_java_project_image(image_dict):
 def run_docker(docker_dict):
     """调用脚本，根据指定镜像启动docker容器"""
     sh_file_path = ROOT_DIR + 'run_docker.sh'
+    tmp_file = gen_unique_id()
     param_arr = [
         'sh',
         sh_file_path,
         docker_dict.get('image_name'),
         docker_dict.get('net_name', ''),
-        docker_dict.get('net_ip', '')
+        docker_dict.get('net_ip', ''),
+        '>',
+        tmp_file
     ]
     os.system(' '.join(param_arr))
+    file = open(tmp_file)
+    lines = file.readlines()
+    container_id = lines[-1]
+    os.system('rm -rf ' + tmp_file)
+    if container_id.endswith('\n'):
+        return container_id[0: -1]
+    return container_id
 
 
 if __name__ == '__main__':

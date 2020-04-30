@@ -14,7 +14,7 @@ CREATE TABLE dm_docker_container(
   `id` int(11) AUTO_INCREMENT PRIMARY KEY COMMENT '自增id',
   `docker_id` varchar(32) NOT NULL DEFAULT '' COMMENT 'docker容器id,业务id',
   `project_id` varchar(32) NOT NULL DEFAULT '' COMMENT '项目id，对应表dm_project',
-  `container_id` varchar(32) NOT NULL DEFAULT '' COMMENT '对应容器启动后的container_id',
+  `container_id` varchar(64) NOT NULL DEFAULT '' COMMENT '对应容器启动后的container_id',
   `git_address` varchar(64) NOT NULL DEFAULT '' COMMENT '拉取对应项目的git地址',
   `git_branch` varchar(32) NOT NULL DEFAULT '' COMMENT '对应项目的git分支',
   `image_name` varchar(32) NOT NULL DEFAULT '' COMMENT '镜像名称',

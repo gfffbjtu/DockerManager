@@ -44,4 +44,12 @@ def select_docker_by_docker_id(docker_id):
     return ModelDockerContainer.query.filter(ModelDockerContainer.docker_id == docker_id).first()
 
 
+def update_container_id_by_docker_id(docker_id, container_id):
+    """根据docker_id更新容器id"""
+    docker_obj = ModelDockerContainer.query.filter(ModelDockerContainer.docker_id == docker_id).first()
+    docker_obj.container_id = container_id
+    db.session.commit()
+    return 0, 'success'
+
+
 
