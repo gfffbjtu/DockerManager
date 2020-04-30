@@ -39,10 +39,23 @@ def build_java_project_image(image_dict):
     return image_id
 
 
+def run_docker(docker_dict):
+    """调用脚本，根据指定镜像启动docker容器"""
+    sh_file_path = ROOT_DIR + 'run_docker.sh'
+    param_arr = [
+        'sh',
+        sh_file_path,
+        docker_dict.get('image_name'),
+        docker_dict.get('net_name', ''),
+        docker_dict.get('net_ip', '')
+    ]
+    os.system(' '.join(param_arr))
+
+
 if __name__ == '__main__':
-    image_id = '9ff41025cdf3\n'
-    if image_id.endswith('\n'):
-        image_id = image_id[0: -1]
-    print(image_id)
-
-
+    docker_dict = {
+        'image_name': 'dockerjava:v6',
+        'net_name': '',
+        'net_name': ''
+    }
+    run_docker(docker_dict)

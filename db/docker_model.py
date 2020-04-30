@@ -39,3 +39,9 @@ def insert_docker_container(docker_dict):
     return 0, 'success'
 
 
+def select_docker_by_docker_id(docker_id):
+    """根据docker_id查询docker_obj"""
+    return ModelDockerContainer.query.filter(ModelDockerContainer.docker_id == docker_id).first()
+
+
+

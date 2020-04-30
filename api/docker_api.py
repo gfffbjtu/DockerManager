@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, current_app
 from common_tool import get_request_json_obj
-from db.docker_model import insert_docker_container
+from db.docker_model import insert_docker_container, select_docker_by_docker_id
 
 docker_blue: Blueprint = Blueprint('docker_api', __name__)
 
@@ -31,3 +31,23 @@ def create_docker():
 
     err_no, err_msg = insert_docker_container(docker_dict)
     return jsonify({'err_no': err_no})
+
+
+@docker_blue.route('/docker/run', methods=['POST'])
+def run_docker():
+    """启动docker容器"""
+    run_docker_req = get_request_json_obj()
+    if 'docker_id' in run_docker_req:
+        docker_id = run_docker_req['docker_id']
+    else:
+        return jsonify({'err_no': 202004301536, 'err_msg': 'param error-docker_id cannot be null'})
+
+    docker_obj = select_docker_by_docker_id(docker_id)
+    if docker_obj is None:
+        return jsonify({'err_no': 202004301547, 'err_msg': 'cannot find docker record by docker_id'})
+    if not docker_obj.image_name:
+        return jsonify({'err_no': 202004301550, 'err_msg': 'please configure image firstly'})
+
+    # 执行脚本启动容器
+
+    return jsonify({'err-no': 0})
